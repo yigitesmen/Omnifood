@@ -78,7 +78,7 @@
 /* HERO SECTION */
 /**************************/
 
-.hero-section {
+#hero-section {
     background-color: #fdf2e9;
     padding: 4.8rem 0 9.6rem 0;
 }
@@ -140,7 +140,7 @@
 /* FEATURED IN SECTION */
 /**************************/
 
-.featured-section {
+#featured-section {
     padding: 4.8rem 0 3.2rem 0;
 }
 
@@ -171,7 +171,7 @@
 /* HOW IT WORKS SECTION */
 /**************************/
 
-.how-section {
+#how-section {
     padding: 9.6rem 0;
 }
 
@@ -228,7 +228,7 @@
 /* MEALS SECTION */
 /**************************/
 
-.meals-section {
+#meals-section {
     padding: 9.6rem 0;
 }
 
@@ -319,7 +319,7 @@
 /* TESTIMONIALS SECTION */
 /**************************/
 
-.testimonials-section {
+#testimonials-section {
     background-color: #fdf2e9;
     display: grid;
     grid-template-columns: 55fr 45fr;
@@ -379,7 +379,7 @@
 /* PRICING SECTION */
 /**************************/
 
-.pricing-section {
+#pricing-section {
     padding: 9.6rem 0;
 }
 
@@ -486,7 +486,7 @@
 /* CTA SECTION */
 /**************************/
 
-.cta-section {
+#cta-section {
     padding: 4.8rem 0 12.8rem;
 }
 
