@@ -1,16 +1,29 @@
+const header = document.querySelector('.header')
+const mobileNavBtn = document.querySelector('.mobile-nav-btn')
+const mainNavLinks = document.getElementsByClassName('main-nav-link')
+const heroSection = document.getElementById('hero')
+const currYear = document.querySelector('.curr-year')
+
 // Set current year
-const year = document.getElementById('year')
-year.textContent = new Date().getFullYear()
+currYear.textContent = new Date().getFullYear()
 
 // Make mobile navigation work
-const header = document.getElementsByClassName('header')[0]
-const mobileNavBtn = document.getElementsByClassName('mobile-nav-btn')[0]
 mobileNavBtn.addEventListener('click', () => {
     header.classList.toggle('nav-open')
 })
-const mainNavLinks = document.getElementsByClassName('main-nav-link')
 for (const link of mainNavLinks) {
     link.addEventListener('click', () => {
         if (header.classList.contains('nav-open')) header.classList.remove('nav-open')
     })
 }
+
+// Sticky navigation
+new IntersectionObserver(elements => {
+    elements[0].isIntersecting
+        ? document.body.classList.remove('sticky')
+        : document.body.classList.add('sticky')
+}, {
+    root: null,
+    threshold: 0,
+    rootMargin: '-80px'
+}).observe(heroSection)
